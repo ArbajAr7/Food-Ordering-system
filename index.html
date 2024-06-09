@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="main_body">
+    <div id="page_menu">
+        <div onclick="hidemenu()" class="close">
+            ✖
+        </div>
+        <img src="logo1.svg">
+        <p id="resturant_name">Your Restaurant Menu</p>
+        <p id="resturant_slogan">Your Slogan</p>
+        <hr>
+        <p id="quickLinks">Quick Links</p>
+        <ol start="1" style="color: white;">
+            <li>Home</li>
+            <li>Your Orders</li>
+            <li>Wallet</li>
+            <li>Profile</li>
+            <li>Logout</li>
+            <li onclick="secondscreen()">Menu/Second Screen</li>
+        </ol>
+        <hr>
+        <p id="quickLinks">More About Us</p>
+        <ol start="1" style="color: white;">
+            <li>Our blog</li>
+            <li>Upcoming Dishes</li>
+            <li>Our Story</li>
+            <li>Social Media Links</li>
+        </ol>
+    </div>
+    <div id="products_search">
+        <div id="search_div">
+            <nav id="navbar">
+                <form id="form">
+                    <div onclick="showmenu()" class="open">
+                        ☰
+                    </div>
+                  <input id="search" type="search" placeholder="Search Food Item" aria-label="Search">
+                  <button class="signup" id="btn" type="submit">Signup</button>
+                  <button id="btn" type="submit">Login</button>
+                  <img id="logosmall" src="logosmall.svg">
+                </form>
+            </nav>
+        </div>
+        <div id="products">
+            <img id="banner" src="banner.svg"><br>
+            <p id="menu">Menu</p>
+            <div id="cards">
+                <!-- <div class="card">
+                    <img src="https://source.unsplash.com/random/1920x1080/?falafel">
+                    <div id="card_div">
+                        <div id="nameprice">
+                            <p>Burger</p>
+                            <p>$5.99/-</p>
+                        </div>
+                        <div>
+                            <div class="cart-container">
+                                <button class=" btn add-button" id="add-button">+</button>
+                                <div class="cart-controls" id="cart-controls">
+                                    <button class="btn minus-button" id="minus-button">-</button>
+                                    <span id="item-count">1</span>
+                                    <button class="btn plus-button" id="plus-button">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+              </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
